@@ -1772,6 +1772,15 @@
                 alert('已停用螢幕截圖功能');
             }
         });
+        if (e.key === 'F12') {
+        e.preventDefault();
+        }
+        if (e.ctrlKey && (e.key === 's' || e.key === 'u' || e.key === 'S' || e.key === 'U')) {
+            e.preventDefault();
+        }
+        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) {
+            e.preventDefault();
+        }
     </script>
 </body>
 </html>
